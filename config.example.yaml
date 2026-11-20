@@ -1,0 +1,19 @@
+http:
+  listen_addr: ":8080" # ABF_HTTP_LISTEN_ADDR
+
+postgres:
+  addr: "localhost:5432" # ABF_POSTGRES_ADDR
+  database: "antibruteforce" # ABF_POSTGRES_DATABASE
+  user: "antibruteforce" # ABF_POSTGRES_USER
+  password: "" # ABF_POSTGRES_PASSWORD
+
+redis:
+  addr: "localhost:6379" # ABF_REDIS_ADDR
+  password: "" # ABF_REDIS_PASSWORD
+
+limits:
+  login: 10 # ABF_LIMITS_LOGIN
+  password: 100 # ABF_LIMITS_PASSWORD
+  ip: 1000 # ABF_LIMITS_IP
+
+hmac_secret: "" # ABF_HMAC_SECRET
