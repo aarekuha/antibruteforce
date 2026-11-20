@@ -1,0 +1,17 @@
+name: antibruteforce-dev
+
+services:
+  redis:
+    image: redis:8.10.3-trixie
+    ports:
+      - "127.0.0.1:6379:6379"
+    command:
+      - redis-server
+      - --maxmemory
+      - 64mb
+      - --maxmemory-policy
+      - noeviction
+      - --save
+      - ""
+      - --appendonly
+      - "no"

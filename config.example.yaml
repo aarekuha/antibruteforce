@@ -10,6 +10,11 @@ postgres:
 redis:
   addr: "localhost:6379" # ABF_REDIS_ADDR
   password: "" # ABF_REDIS_PASSWORD
+  max_idle: 8 # ABF_REDIS_MAX_IDLE
+  idle_timeout: 1m # ABF_REDIS_IDLE_TIMEOUT
+  connect_timeout: 5s # ABF_REDIS_CONNECT_TIMEOUT
+  read_timeout: 5s # ABF_REDIS_READ_TIMEOUT
+  write_timeout: 5s # ABF_REDIS_WRITE_TIMEOUT
 
 limits:
   login: 10 # ABF_LIMITS_LOGIN
